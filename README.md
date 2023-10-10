@@ -1,6 +1,6 @@
 # Spotify Sentiment Analysis
 This is a small tool to help with sentiment analysis on Spotify listening histories.
-It history data, which can be requested by the users in combination with metadata provided by the [Spotify Web API](https://developer.spotify.com/documentation/web-api).
+It processes history data, which can be [requested by the users](https://www.spotify.com/us/account/privacy/) in combination with metadata provided by the [Spotify Web API](https://developer.spotify.com/documentation/web-api).
 
 ## Installation
 1. First you need to install Python 3 (tested with 3.10) and poetry
@@ -31,7 +31,7 @@ This program consists of two stages:
 	* `-h, --help` - find out about more options
 	So we get:
 	```sh
-	poetry run python3 ./spot_analyze.py -h StreamingHistory0.json -d data.json -m 10 -n 200 gen-data
+	poetry run python3 ./spot_analyze.py -h StreamingHistory0.json -d data.json -m 10 -n 200 -c gen-data
 	```
 
 *Please note that data provided by Spotify may not be used to train AI models!*
